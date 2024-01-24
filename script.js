@@ -15,11 +15,9 @@ submit.onclick = function(){
         guess = Number(guess)
         if(isNaN(guess)){
             message.textContent = "You must enter a number"
-            console.log("You must enter a number")
         }
         else if(guess < minNum || guess > maxNum){
             message.textContent = "Your number must be between 0 and 100"
-            console.log("Your number must be between 0 and 100")
         }
         else{
             attemps++
