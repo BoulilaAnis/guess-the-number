@@ -29,7 +29,31 @@ submit.onclick = function(){
                 message.textContent = "too height try again"
             }
             else if(guess === answer){
-                message.textContent = `you win the number is ${answer}`
+                if(attemps < 5){
+                    document.getElementById('attemps').style = "display: none;"
+                    message.innerHTML = `<p>
+                                            the number is ${answer} <br>
+                                            you are greatest man in the word <br>
+                                            you win in ${attemps} attemps <br>
+                                        </p>`
+                    message.style = `font-size: 45px; 
+                                    color: red;
+                                    transition:0.8s; 
+                                    text-align: center;`
+
+                }
+                else{
+                    document.getElementById('attemps').style = "display: none;"
+                    message.innerHTML = `<p>
+                                            the number is ${answer} <br>
+                                            you win in ${attemps} attemps <br>
+                                        </p>`
+                    message.style = `font-size: 30px; 
+                                    color: blue;
+                                    transition:0.8s; 
+                                    text-align: center;`
+
+                }
             }
     }
 
