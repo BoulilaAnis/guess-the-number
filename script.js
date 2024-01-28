@@ -8,7 +8,6 @@ let attemps = 0;
 let submit = document.getElementById("submit")
 let message = document.getElementById("message")
 let running = true
-console.log(`The generated number is ${answer}`);
 
 submit.onclick = function(){
         guess = document.getElementById("input").value
